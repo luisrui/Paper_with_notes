@@ -3,6 +3,6 @@ Read Papers of different tasks and provided with code or notes
 
 ## Current Tasks
 + low-level object detection
-+ relation detection of static images
 + relation detection in videos
++ multimodel learning
 + face recognition
