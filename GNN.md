@@ -117,3 +117,35 @@ example:
 
 GNN的假设： 保持图的对称性
 
+### GNN Module的抽象解释性分析：
+
+Cited from *Multimodel Learning with graphs* from Nature Machine Intelligence
+
++ Neighborhood aggregation
+
+![1681042171469](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681042171469.png)
+
+​	根据不同GNN中聚合函数的使用，将GNN分为两类： convolutional & message-passing
+
+todo: 分析GCN的架构
+
+##### Neural Message-passing
+
+![1681043024849](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681043024849.png)
+
+$\phi$是一个aggregator, $\psi$是一个可学的函数，比如MLP
+
++ Node Update
+
+![1681042289986](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681042289986.png)
+
+​     根据现有的结点状态和聚合后的结点表示，去更新结点
+
++ Representation transformation
+
+  ![1681042433362](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681042433362.png)
+
+   
+
+​     把已经学到的结点表达转化成根据下游任务需要的embedding形式(参考labels生成的)
+
