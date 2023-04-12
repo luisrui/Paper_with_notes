@@ -34,7 +34,7 @@
 + 找到一个矩阵T，使得$T_{ij}$表示把$E_I$第i个特征维度转换为结构编码$E_s$的第j个特征维度的概率
 + 使用T计算barycenter，把语义编码映射到统一的空间S中，形成新的编码$\hat{E_I}$
 
-![1681116019088](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681116019088.png)
+![](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681222456963.png)
 
 ### Relational Transformations
 
