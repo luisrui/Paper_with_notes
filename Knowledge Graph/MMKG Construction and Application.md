@@ -25,3 +25,32 @@
 
 ![1681312647014](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681312647014.png)
 
+## Multi-Modal Learning
+
+### multi-modal representation
+
+利用多模态互补学习特征表示
+
++ project the multiple modalities into a unified space
++ represent every single modal in its own vector space(satisfy certain constraints)
+
+### multi-modal translation
+
+把一个模态的实例转化为另一个模态的实例
+
+### multi-modal alignment
+
+找到不同模态之间的联系
+
+### multi-modal Fusion
+
+融合不同模态信息，实现预测
+
+目前大部分使用attention机制去实现
+
+### multi-modal co-learning
+
+用其他模态的数据缓解某一模态数据不足的问题，用过校准调节的方式
+
+### Contruction
+

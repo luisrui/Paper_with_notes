@@ -149,3 +149,47 @@ $\phi$是一个aggregator, $\psi$是一个可学的函数，比如MLP
 
 ​     把已经学到的结点表达转化成根据下游任务需要的embedding形式(参考labels生成的)
 
+# GAT
+
+#### a graph attentional layer
+
+a set of node features
+
+模型的输入是一组结点特征，输出是一组新的结点特征(潜在输出不同的特征维度)
+
+输入结点特征$h_i$, $h_j$
+$$
+e_{ij} = a(Wh_i, Wh_j)
+$$
+$e_{ij}$用来计算node j 对于node i的重要性程度
+
+同时，文章中采用mask attention机制，在计算$e_{ij}$的时候，只考虑i周围的一些邻居结点(通常来讲就是一阶临域)
+
+![1681564204632](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681564204632.png)
+
+在原始的GAT原文中，注意力机制是一个线性层和LeakyRelu非线性层 negative input slope
+
+![1681566673665](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681566673665.png)
+
+||是连接矩阵符号
+
+最后把关于node i周围的点的注意力乘以权重乘以编码求和，用一个非线性函数激活，得到新的改结点编码：![1681570277109](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681570277109.png)
+
+实际上会使用多头注意力机制进行整合得到一个综合的embedding，最后输出的向量长度是K * F'的长度(k
+
+个注意力机制，F’为原来每一个注意力机制应该编码的长度)，所以采用平均方法输出一个编码：![1681570937568](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681570937568.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
