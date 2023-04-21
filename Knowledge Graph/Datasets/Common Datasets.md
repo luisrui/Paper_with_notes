@@ -1,6 +1,6 @@
 ## Common Datasets
 
-![1681477454328](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681477454328.png)
+![	](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681477454328.png)
 
 #### VisualSem (MMKG)  https://github.com/iacercalixto/visualsem
 
@@ -89,3 +89,14 @@ The triple part of WN9-IMG is the subset of a classical KG dataset WN18
 + 11292个entity
 + 192钟关系
 + 76424张图片
+
+
+
+#### OpenBG-IMG https://github.com/OpenBGBenchmark/OpenBG-IMG
+
+母体数据： OpenBG
+
+总结：
+
++ 
++ 

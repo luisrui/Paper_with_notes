@@ -18,3 +18,5 @@ MarKG
 
 ### Data Collection and Processing
 
+![1681789171298](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1681789171298.png)
+
