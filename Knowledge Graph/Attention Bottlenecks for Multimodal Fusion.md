@@ -24,9 +24,9 @@ $$
 
 ![1684655283548](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1684655283548.png)
 
-两个模态 rgb和spec，只能在bottleneck里面交换信息
+两个模态rgb和spec，只能在bottleneck里面交换信息
 
-由于在多层transformer中，low-level的信息只是一些边角信息，到high-level才是具体的semantic soncepts，一开始的边角信息不同模态的差异性很大，所以没有必要fusion
+由于在多层transformer中，low-level的信息只是一些边角信息，到high-level才是具体的semantic concepts，一开始的边角信息不同模态的差异性很大，所以没有必要fusion
 
 在本文中采用了层次设计，开始使用vanilla self-attention，每个模态单独训练，之后把latent tokens拼接在一起![1684655952813](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1684655952813.png) (前 Lf层)之后采用fusion with modality-specific parameters每个模态单独参数进行训练(后L-Lf层)
 

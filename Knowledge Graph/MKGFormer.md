@@ -17,7 +17,7 @@
 
 找到语言文本中基本的语法和词汇信息
 
-在Bert的前$L_T$层作为visual encoder用来提取图片信息
+在Bert的前$L_T$层作为textual encoder用来提取图片信息
 
 ![1684682551168](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1684682551168.png)
 
@@ -55,7 +55,7 @@ $X_{wd}$ 是一个token sequence，$T_pos$是其position embedding
 
 #### CAF correlation-aware fusion module
 
-目的：减少噪声印象
+目的：减少噪声影响
 
 在PGI模块输出visual vectors和textual vectors之后，先计算两个模态信息之间的相似性矩阵 $S = x^tx(^v)^T$
 
@@ -68,3 +68,4 @@ $Agg_i(x^v)$代表了对于第i个文本token的similarity-aware aggregated visu
 ![1684684768258](C:\Users\ASUS\AppData\Roaming\Typora\typora-user-images\1684684768258.png)
 
 把这个相似度感知融合视觉表示矩阵作为一个信息传入到后面的FFN中
+
